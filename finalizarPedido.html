@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from pizzanato.onpedido.com.br/finalizarPedido by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jan 2023 15:23:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finalizar Pedido</title>
+    
+    <meta content="noindex, nofollow" name="robots">
+    <meta content="noindex, nofollow" name="googlebot">
+    <meta content="nofoloe, noindex, nofollow" name="msnbot">
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport">
+    
+    <link rel="icon" href="../static.onpedido.com.br/img/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="../static.onpedido.com.br/img/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="../static.onpedido.com.br/img/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="../static.onpedido.com.br/img/favicon-128.png" sizes="128x128">
+
+    <link charset="utf-8" href="tema.css" rel="stylesheet" type="text/css">
+    <link charset="utf-8" href="../onpedido.com.br/static/css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="../onpedido.com.br/static/css/fancybox.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="codigoConversao" style="display:none;"></div>
+<div class="cabecalhoPrimarioOpcionais">Finalizar Pedido</div>
+	<div class="containerFP">
+		<div class="colunaEsquerdaFP">
+			<div class="tituloColunaFP">Escolha algo, após finalize seu pedido novamente.
+            <font style="margin-top:15px; font-weight:600;">Abrimos nos seguintes dias e horários:</font>
+            </div>
+            <div style="margin-top:5px!important; font-size:14px!important;">
+            <hr/>
+                <!-- Terça -->
+Terça, das 17:00hs às 23:30hs<hr/>
+<!-- Quarta -->
+Quarta, das 17:00hs às 23:30hs<hr/>
+<!-- Quinta -->
+Quinta, das 17:00hs às 23:30hs<hr/>
+<!-- Sexta -->
+Sexta, das 17:00hs às 23:30hs<hr/>
+<!-- Sábado -->
+Sábado, das 17:00hs às 23:30hs<hr/>
+<!-- Domingo -->
+Domingo, das 17:00hs às 23:30hs<hr/>
+ 
+            </div> 
+		</div>
+		<div class="colunaDireitaFP bgEnderecoColorido"></div>
+	</div>
+	<button type="button" class="botaoCancelarOpcional" onClick="javascript:parent.jQuery.fancybox.close();" style="width:100%!important">Fechar janela</button>
+</div>
+<style>
+
+/* OPÇÕES DE RECEBIMENTO */
+
+.dataRecebimento{
+    width: 450px;
+    border: 0px  solid #ccc;
+    display: table;
+}
+
+.dataRecebimento .itemOpcao {
+    display: table!important;
+    width: 143px;
+    border-bottom: 0px solid #ddd!important;
+    margin: 0!important;
+    padding: 0px!important;
+    border: 1px solid #ccc!important;
+    font-size: 14px!important;
+    font-weight: 300!important;
+    color: #fff!important;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.dataRecebimento .agora{
+    margin-right: 10px!important;
+    width: 125px;
+}
+.dataRecebimento .agendamento{
+    margin-right: 10px!important;
+    width: 135px;
+}
+.dataRecebimento .encomenda{
+    margin-right: 0px!important;
+    width: 170px;
+}
+
+.dataRecebimento .itemOpcao label span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555!important;
+    width: 100%;
+    display: table;
+    line-height: 1.3em;
+    padding-top: 2px!important;
+}
+
+.dataRecebimento .itemOpcao label span:nth-child(2) {
+    font-weight: 600;
+    color: #fff;
+    right: 0;
+    margin-top: -20px;
+    float: right;
+    font-size:12px;
+}
+
+.dataRecebimento .itemOpcao label span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    float: left;
+    width: 100%;
+    display: none;
+    
+}
+.dataRecebimento .itemOpcao label {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    float: left;
+    display: table;
+}
+
+.dataRecebimento .itemOpcao input[type="radio"],
+.dataRecebimento .itemOpcao input[type="checkbox"]{
+    display: none;
+}
+.dataRecebimento .itemOpcao input[type="radio"]:checked + label span:nth-child(1),
+.dataRecebimento .itemOpcao input[type="radio"]:checked + label span:nth-child(1){
+    padding-right: 0px;
+}
+.dataRecebimento .itemOpcao input[type="radio"]:checked + label,
+.dataRecebimento .itemOpcao input[type="checkbox"]:checked + label{
+    
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: #009a57;
+    background-repeat: no-repeat;
+    background-size:  30px 30px;
+    background-position: 10px 15px;
+    background-image: none;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    -webkit-animation: breath 1s ease-in-out none;
+}
+
+.dataRecebimento .itemOpcao input[type="radio"]:checked + label span,
+.dataRecebimento .itemOpcao input[type="checkbox"]:checked + label span{
+    color: #fff!important;
+}
+/**/
+</style>
+<style>
+
+/* PGO */
+.boxPagamentoFP{
+    width: 450px;
+}
+.boxPagamentoFP .itemOpcao {
+    display: table;
+    width: 100%; 
+    margin: 0px!important;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    
+}
+.boxPagamentoFP .itemOpcao:hover{
+    background-color: #ecffe8;
+}
+.boxPagamentoFP .itemOpcao label {
+    display: table;
+    width: 100%; 
+    margin: 0px!important; 
+}
+.boxPagamentoFP .itemOpcao label span:nth-child(1) {
+    display: table;
+    width: 100%;
+    font-size: 14px!important;
+    font-weight: 600!important;
+}
+.boxPagamentoFP .itemOpcao label span:nth-child(2) {
+    display: table;
+    width: 100%; 
+    
+}
+.boxPagamentoFP .itemOpcao label span:nth-child(3) {
+    display: table;
+    width: 100%; 
+    font-size: 14px!important;
+    font-weight: 500!important;
+    color: #555;
+}
+.boxPagamentoFP .itemOpcao input[type="radio"]:checked + label span:nth-child(1),
+.boxPagamentoFP .itemOpcao input[type="radio"]:checked + label span:nth-child(1){
+    padding-right: 0px;
+}
+#boxListaConteudo {
+   background-color: #F7F7F7;
+}
+img.iconPagamento {
+    width: 50px;
+    float: right;
+    clear: both;
+    margin-top: 7px;
+    margin-bottom: -30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#addCreditCard{
+    border:0px;
+    font-size: 100%;
+    line-height: 16.08px;
+    word-spacing: 0px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 14px!important;
+    width: 95%;
+    margin:0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display:block;
+    cursor: pointer;
+    background-color: #34a203;
+}
+#addCreditCard p {
+    width: auto;
+    border: 0px solid #ccc;
+    display: table;
+    margin: 0 auto;
+}
+#addCreditCard span:last-child{
+    font-weight: 600;
+    display: table;
+    position: relative;
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+#addCreditCard span:first-child{
+    background-image: url(https://onpedido.com.br/static/img/mais.svg);
+    background-size:25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: table;
+    float: left;
+}
+.semCartao{
+    width: 100%;
+    display: table;
+    padding: 15px;
+    padding-top: 180px;
+    text-align: center;
+    background-image: url(../onpedido.com.br/static/img/carteira-arte.png);
+    background-size:180px;
+    background-position: 50% 30px;
+    background-repeat: no-repeat;
+}
+.semCartao h1{
+    font-size: 21px;
+}
+.semCartao p{
+    font-size: 14px;
+    color: #333;
+}
+.grid2Box{
+    width: 100%;
+    padding: 15px;
+    padding-top: 0px;
+    float: left;
+    display: table;
+}
+.bandeiras{
+    margin: 0 auto; 
+}
+.bandeiras img{
+    width: 50px;
+    margin-right: 10px;
+    float: left;
+    border-radius:3px;
+    border: 1px solid #ccc;
+        
+}
+#formCartao label{
+    font-weight: 500;
+}
+#formCartao input:focus{
+    border-color: #01a200;
+}
+#formCartao input{
+    font-size: 16px;
+    z-index: 0!important;
+    padding: 10px;
+    width: 100%;
+    font-weight:600;
+    background-color: #FFFFFF;
+    color: #333;
+    border-top: 1px solid #E5E6E9;
+    border-right: 1px solid #DFE0E4;
+    border-bottom: 1px solid #D0D1D5;
+    border-left: 1px solid #DFE0E4;
+    display: table;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 2px 2px #d8d8d8;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+   -user-select: auto;
+    background-size: 33px!important;  
+}
+#formCartao #numero,
+#formCartao #nome{
+    width: 100%;
+}
+
+#formCartao #expira{
+    margin-right: 4%;
+    margin-left: 0%!important;
+}
+#formCartao label{
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+#formCartao .duoInput{
+  width: 48%;
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+#formCartao .duoInput:nth-child(4){
+  margin-right:2%!important;
+   margin-top: 10px;
+}
+#formCartao .duoInput:nth-child(5){
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 35%;
+}
+#formCartao .duoInput:nth-child(5) input{
+    width: 100%;
+}
+#formCartao .duoInput:nth-child(6){
+  width: 100%;
+}
+#formCartao .duoInput:nth-child(7){
+ 
+}
+#formCartao .duoInput:nth-child(8){
+    width: 45%;
+   margin-left: 7%;
+}
+#formCartao .info{
+    width: 10%;
+    height: 40px;
+    margin-top: 37px;
+    float: right;
+    cursor: pointer;
+    display: block;
+    margin-bottom: -50px;
+    background-image: url(../onpedido.com.br/static/img/icon-info.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 28px;
+    border:0px solid #000;
+    z-index: 9999!important;
+}
+#boxDinheiroFP .inputsForm {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: 0px solid #ccc;
+    display: table;
+    width: 450px; 
+    color: #555;
+}
+#boxDinheiroFP .inputSifrao{
+    margin-top: -10px!important;
+}
+#boxDinheiroFP .inputsForm center{
+   float: left;
+   padding-right: 10px; 
+   padding-left: 15px; 
+   text-align: right;
+   padding-top: 25px;
+}
+#boxDinheiroFP .inputsForm center b{
+    font-weight: 300!important;
+    font-size: 14px;
+}
+#boxDinheiroFP .inputsForm label{
+    font-weight: 500;
+}
+.showPix {
+    width: 100%;
+    display: table;
+    padding: 15px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+#loadQRCodePIX {
+    width: 277px;
+    display: table;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 7px;
+    border:1px solid #D0D1D5;
+}
+.showPix h1{
+    line-height: 1.2;
+    font-size: 27px;
+}
+#copiarCodePix{
+    padding: 12px;
+    background-color: #337de7;
+}
+#copiarCodePix p {
+    width: auto;
+    border: 0px solid #ccc;
+    display: table;
+    margin: 0 auto;
+}
+#copiarCodePix span:last-child{
+    font-weight: 600;
+    display: table;
+    position: relative;
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+#copiarCodePix span:first-child{
+    background-image: url(../onpedido.com.br/static/img/duplicarIcon.png);
+    background-size:22px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: table;
+    float: left;
+}
+#copiarCodePix {
+    border:0px;
+    font-size: 100%;
+    line-height: 16.08px;
+    word-spacing: 0px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 14px!important;
+    width: 50%;
+    margin:0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display:block;
+    cursor: pointer;
+}
+</style>
+</body>
+
+<!-- Mirrored from pizzanato.onpedido.com.br/finalizarPedido by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jan 2023 15:24:05 GMT -->
+</html>

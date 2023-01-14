@@ -1,0 +1,2816 @@
+<!DOCTYPE html>
+<html lang="pt-br" itemscope itemtype="http://schema.org/Restaurant" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from pizzanato.onpedido.com.br/pizzas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jan 2023 15:23:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8" />
+
+<title>Onpedido - Montar pizza</title>
+
+<meta name="robots" content="noindex, nofollow" />
+<meta name="googlebot" content="noindex, nofollow" />
+<meta name="msnbot" content="nofoloe, noindex, nofollow" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+
+<!-- CSS Necessário -->
+<link rel="stylesheet" charset="utf-8" href="https://pizzanato.onpedido.com.br/tema.php"/>   
+<link rel="stylesheet" charset="utf-8" href="https://pizzanato.onpedido.com.br/css/estilo.css"/>
+<link rel="stylesheet" charset="utf-8" href="http://onpedido.com.br/static/plugins/owlCarousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="http://onpedido.com.br/static/css/fancybox.css" media="screen" />
+<link rel="stylesheet" href="http://onpedido.com.br/static/plugins/notify/freeow.css" />
+
+
+</head>
+<body class="marginBoxProduto">
+
+   
+    <div id="abrirProdutoPizzas" class="boxopcoes" style="width:100%;">	
+        <div class="cabecalhoPrimarioOpcionais">
+            <font id="fullTitulo">Monte sua pizza</font>
+            <div id="processandoPizzas" style="display:none" >Aguarde um momento...</div>
+        </div>
+        
+    <div id="corpoRollOpcionais99999" class="">	
+        
+        <div class="itemOpcionais" style="width: 100%; float:left;">
+         <div class="cabecalhoSecundarioOpcionais">
+            <div class="tituloBox">
+                <span>1</span>
+                <font>Vamos montar sua pizza, mas antes...</font>
+            </div>
+        </div>     
+        <div class="boxOpcoes">
+            <div class="avisoPizzas">             
+                <h2 class="color">Saiba que a pizza será 
+                cobrada pelo valor do sabor mais caro escolhido.</h2>O valor está<br>ao lado de cada opção de sabor.<br><br>Certo? Avance para começar.
+            </div>   
+        </div>
+
+            <button type="button" class="botaoCancelarOpcional"  onClick="javascript:parent.jQuery.fancybox.close();">Cancelar</button>
+            <button type="button" class="botaoConfirmarOpcional" onClick="avancarTela()">Avançar</button>
+        </div>
+                    <input type="hidden" id="pizzaMix" value="0" />
+                <!-- TAMANHO DA PIZZA -->
+        <div class="itemOpcionais" style="width: 100%; float:left;">
+        <div class="cabecalhoSecundarioOpcionais">
+            <div class="tituloBox">
+                <span>2</span>
+                <font>Escolha uma montagem:</font>
+            </div>
+            <div class="buscarOpcao" id="opBuscaPizzaTamanhosBox">
+                <input type="text" value="" placeholder="Procurar opção desejada" class="inputBuscarOpcao" id="opBuscaPizzaTamanhos" onFocus="procurarOpcao('PizzaTamanhos')"/>
+            </div>
+        </div>     
+        <div class="boxOpcoes" id="opRollPizzaTamanhos">
+            <div class="grupoRollOpcoes" id="grupoRollPizzaTamanho">
+            <ul id="listaOpcoesPizzaTamanhos">
+                <div class="headerTamanhoB"><li><i class="display"><?= $tamanho ?></i><div class="categoriaOpcoes"><h1>Pizzas Brotos</h1><h2>A partir de R$ 22,99<br>Serve 1 pessoa.</h2></div><li>        <li>
+            <i class="display">Broto</i>          
+            <div class="itemOpcao bodyTamanhoBd1">
+                <input type="hidden" class="tamanhoMap" value="Bd1"/>
+                <input type="radio" name="tamanho" id="opcaoValueIdTamanhoBd1check" class="opTamanhoBcheck cleanCheckTamanhos"  onclick="if(this.checked){verTamanho('Bd1')}"/>     
+                <label for="opcaoValueIdTamanhoBd1check">
+                    <span class="spanUm">Broto 1 Sabor</span>
+                    <span class="spanDois"></span>
+                    <span class="spanTres">
+                        Monte sua pizza broto com 1 sabor.<br>
+                    </span>
+                </label>
+            </div>
+        </li>
+        </div><div class="headerTamanhoG"><li><i class="display"><?= $tamanho ?></i><div class="categoriaOpcoes"><h1>Pizzas Grandes</h1><h2>A partir de R$ 29,99<br>Serve 4 pessoas.</h2></div><li>        <li>
+            <i class="display">Grande</i>          
+            <div class="itemOpcao bodyTamanhoGd1">
+                <input type="hidden" class="tamanhoMap" value="Gd1"/>
+                <input type="radio" name="tamanho" id="opcaoValueIdTamanhoGd1check" class="opTamanhoGcheck cleanCheckTamanhos"  onclick="if(this.checked){verTamanho('Gd1')}"/>     
+                <label for="opcaoValueIdTamanhoGd1check">
+                    <span class="spanUm">Grande 1 Sabor</span>
+                    <span class="spanDois"></span>
+                    <span class="spanTres">
+                        Monte sua pizza grande com 1 sabor.<br>
+                    </span>
+                </label>
+            </div>
+        </li>
+                <li>
+            <i class="display">Grande</i>          
+            <div class="itemOpcao bodyTamanhoGd2">
+                <input type="hidden" class="tamanhoMap" value="Gd2"/>
+                <input type="radio" name="tamanho" id="opcaoValueIdTamanhoGd2check" class="opTamanhoGcheck cleanCheckTamanhos"  onclick="if(this.checked){verTamanho('Gd2')}"/>     
+                <label for="opcaoValueIdTamanhoGd2check">
+                    <span class="spanUm">Grande 2 Sabores</span>
+                    <span class="spanDois"></span>
+                    <span class="spanTres">
+                        Monte sua pizza grande com 2 sabores.<br>
+                    </span>
+                </label>
+            </div>
+        </li>
+        </div>            </ul>
+            <div class="buscasOpcaoAviso display" id="avisoBuscaPizzaTamanhos"> 
+                <h1 class="color">Sem resultados</h1>
+                <h2>Tente procurar pelo nome ou de acordo com a descrição da opção.<br>
+                Para visualizar novamente as opções apague o conteúdo da caixa de pesquisa.</h2>
+            </div>
+            </div>
+        </div>
+            <button type="button" class="botaoCancelarOpcional voltarPizzas">Voltar</button>
+            <button type="button" class="botaoConfirmarOpcional" onClick="validaTamanho()">Avançar</button>
+        </div>
+    
+        <!-- SABORES -->
+    <div class="itemOpcionais" style="width: 100%; float:left;">
+        <div class="cabecalhoSecundarioOpcionais">
+            <div class="tituloBox">
+                <span>3</span>
+                <font id="tituloSabores"></font>
+            </div>
+            <div class="buscarOpcao">
+                <input type="text" value="" placeholder="Procurar sabor" class="inputBuscarOpcao" id="opBuscaPizzaSabores" onFocus="procurarOpcao('PizzaSabores')"/>
+            </div>
+        </div>  
+     
+         <div class="boxOpcoes" id="opRollPizzaSabores">
+            <div class="grupoRollOpcoes" id="grupoRollPizzaSabores">
+                                    <input type="hidden" id="OpcoesBoxQtd9999933" class="cleanBoxQtd99999" value="0"/>
+            <input type="hidden" id="OpcoesBoxMax9999933" value="0"/>
+            <input type="hidden" id="OpcoesBoxMin9999933" value="0"/>
+            <ul id="listaOpcoesPizzaSabores">
+          	
+                                <li>
+                    <i class="display">2 QUEIJOS TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993314" onClick="maisMenos(99, 0,999993314,0,14,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993314">
+                                        <div id="numeroItens999993314" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993314" onClick="maisMenos(99,1,999993314,0,14,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">2 QUEIJOS TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, catupiry, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993314" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="14" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">3 QUEIJOS TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993315" onClick="maisMenos(99, 0,999993315,0,15,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993315">
+                                        <div id="numeroItens999993315" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993315" onClick="maisMenos(99,1,999993315,0,15,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">3 QUEIJOS TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, catupiry, cheddar, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993315" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="15" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">4 QUEIJOS TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993316" onClick="maisMenos(99, 0,999993316,0,16,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993316">
+                                        <div id="numeroItens999993316" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993316" onClick="maisMenos(99,1,999993316,0,16,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">4 QUEIJOS TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, catupiry, provolone e parmesão.</div>
+                                <input type="hidden" id="opcaoValueId999993316" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="16" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">5 QUEIJOS ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993333" onClick="maisMenos(99, 0,999993333,0,33,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993333">
+                                        <div id="numeroItens999993333" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993333" onClick="maisMenos(99,1,999993333,0,33,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">5 QUEIJOS ESPECIAL</div>
+                                <div class="descricao">massa,molho, mussarela, catupiry, provolone, gorgonzola, parmesão, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993333" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="33" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">ATUM ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993332" onClick="maisMenos(99, 0,999993332,0,32,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993332">
+                                        <div id="numeroItens999993332" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993332" onClick="maisMenos(99,1,999993332,0,32,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">ATUM ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, atum, cebola, catupiry, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993332" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="32" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BACON C CHEDDAR ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993336" onClick="maisMenos(99, 0,999993336,0,36,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993336">
+                                        <div id="numeroItens999993336" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993336" onClick="maisMenos(99,1,999993336,0,36,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BACON C CHEDDAR ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, Bacon , cheddar ,tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993336" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="36" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BACON TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999338" onClick="maisMenos(99, 0,99999338,0,8,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999338">
+                                        <div id="numeroItens99999338" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999338" onClick="maisMenos(99,1,99999338,0,8,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BACON TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, Bacon, tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId99999338" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="8" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BAIANA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999335" onClick="maisMenos(99, 0,99999335,0,5,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999335">
+                                        <div id="numeroItens99999335" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999335" onClick="maisMenos(99,1,99999335,0,5,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BAIANA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, calabresa moída, molho de pimenta, ovos, cebola, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId99999335" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="5" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BANANA COM CANELA PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993338" onClick="maisMenos(99, 0,999993338,0,38,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993338">
+                                        <div id="numeroItens999993338" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993338" onClick="maisMenos(99,1,999993338,0,38,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BANANA COM CANELA PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, mussarela, Banana, açúcar e canela.</div>
+                                <input type="hidden" id="opcaoValueId999993338" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="38" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BANANA COM CHOCOLATE PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993337" onClick="maisMenos(99, 0,999993337,0,37,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993337">
+                                        <div id="numeroItens999993337" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993337" onClick="maisMenos(99,1,999993337,0,37,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BANANA COM CHOCOLATE PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, Banana, chocolate, açúcar e canela.</div>
+                                <input type="hidden" id="opcaoValueId999993337" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="37" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BANANA NEVADA PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993348" onClick="maisMenos(99, 0,999993348,0,48,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993348">
+                                        <div id="numeroItens999993348" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993348" onClick="maisMenos(99,1,999993348,0,48,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BANANA NEVADA PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Banana, chocolate branco, açúcar e canela.</div>
+                                <input type="hidden" id="opcaoValueId999993348" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="48" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BAURU TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993317" onClick="maisMenos(99, 0,999993317,0,17,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993317">
+                                        <div id="numeroItens999993317" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993317" onClick="maisMenos(99,1,999993317,0,17,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BAURU TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, presunto, tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993317" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="17" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BRIGADEIRO PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993341" onClick="maisMenos(99, 0,999993341,0,41,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993341">
+                                        <div id="numeroItens999993341" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993341" onClick="maisMenos(99,1,999993341,0,41,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BRIGADEIRO PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, Chocolate e granulado.</div>
+                                <input type="hidden" id="opcaoValueId999993341" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="41" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">BRÓCOLIS TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993310" onClick="maisMenos(99, 0,999993310,0,10,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993310">
+                                        <div id="numeroItens999993310" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993310" onClick="maisMenos(99,1,999993310,0,10,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">BRÓCOLIS TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, Brócolis, milho, tomate, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId999993310" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="10" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">CALABRESA COM CATUPIRY TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993318" onClick="maisMenos(99, 0,999993318,0,18,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993318">
+                                        <div id="numeroItens999993318" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993318" onClick="maisMenos(99,1,999993318,0,18,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">CALABRESA COM CATUPIRY TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, calabresa, tomate, catupiry, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993318" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="18" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">CALABRESA ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993330" onClick="maisMenos(99, 0,999993330,0,30,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993330">
+                                        <div id="numeroItens999993330" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993330" onClick="maisMenos(99,1,999993330,0,30,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">CALABRESA ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, Calabresa, tomate, cebola, bacon, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId999993330" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="30" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">CALABRESA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999332" onClick="maisMenos(99, 0,99999332,0,2,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999332">
+                                        <div id="numeroItens99999332" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999332" onClick="maisMenos(99,1,99999332,0,2,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">CALABRESA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, calabresa, cebola, orégano e azeitona</div>
+                                <input type="hidden" id="opcaoValueId99999332" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="2" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">CARNE SECA ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993335" onClick="maisMenos(99, 0,999993335,0,35,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993335">
+                                        <div id="numeroItens999993335" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993335" onClick="maisMenos(99,1,999993335,0,35,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">CARNE SECA ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, carne seca, cebola, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993335" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="35" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">CHOCOLATE PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993342" onClick="maisMenos(99, 0,999993342,0,42,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993342">
+                                        <div id="numeroItens999993342" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993342" onClick="maisMenos(99,1,999993342,0,42,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">CHOCOLATE PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, Mussarela e chocolate</div>
+                                <input type="hidden" id="opcaoValueId999993342" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="42" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">DO CHEFE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993313" onClick="maisMenos(99, 0,999993313,0,13,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993313">
+                                        <div id="numeroItens999993313" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993313" onClick="maisMenos(99,1,999993313,0,13,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">DO CHEFE TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, Calabresa, presunto, ovo, cebola e catupiry.</div>
+                                <input type="hidden" id="opcaoValueId999993313" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="13" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">FRANGO C CREAM CHEESE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993334" onClick="maisMenos(99, 0,999993334,0,34,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993334">
+                                        <div id="numeroItens999993334" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993334" onClick="maisMenos(99,1,999993334,0,34,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">FRANGO C CREAM CHEESE ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, creche, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993334" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="34" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">FRANGO CHEDDAR TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993311" onClick="maisMenos(99, 0,999993311,0,11,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993311">
+                                        <div id="numeroItens999993311" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993311" onClick="maisMenos(99,1,999993311,0,11,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">FRANGO CHEDDAR TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, cheddar, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993311" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="11" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">FRANGO COM BACON TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993319" onClick="maisMenos(99, 0,999993319,0,19,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993319">
+                                        <div id="numeroItens999993319" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993319" onClick="maisMenos(99,1,999993319,0,19,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">FRANGO COM BACON TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, bacon, tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993319" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="19" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">FRANGO COM CATUPIRY TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999339" onClick="maisMenos(99, 0,99999339,0,9,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999339">
+                                        <div id="numeroItens99999339" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999339" onClick="maisMenos(99,1,99999339,0,9,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">FRANGO COM CATUPIRY TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, catupiry, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId99999339" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="9" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">MARGUERITA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999333" onClick="maisMenos(99, 0,99999333,0,3,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999333">
+                                        <div id="numeroItens99999333" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999333" onClick="maisMenos(99,1,99999333,0,3,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">MARGUERITA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, manjericão, tomate, parmesão, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId99999333" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="3" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">MORANGO PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993347" onClick="maisMenos(99, 0,999993347,0,47,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993347">
+                                        <div id="numeroItens999993347" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993347" onClick="maisMenos(99,1,999993347,0,47,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">MORANGO PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Chocolate e morango.</div>
+                                <input type="hidden" id="opcaoValueId999993347" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="47" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">MUSSARELA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999331" onClick="maisMenos(99, 0,99999331,0,1,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999331">
+                                        <div id="numeroItens99999331" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999331" onClick="maisMenos(99,1,99999331,0,1,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">MUSSARELA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId99999331" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="1" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">NAPOLITANA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999337" onClick="maisMenos(99, 0,99999337,0,7,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999337">
+                                        <div id="numeroItens99999337" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999337" onClick="maisMenos(99,1,99999337,0,7,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">NAPOLITANA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, tomate, parmesão, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId99999337" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="7" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">NATO ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993331" onClick="maisMenos(99, 0,999993331,0,31,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993331">
+                                        <div id="numeroItens999993331" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993331" onClick="maisMenos(99,1,999993331,0,31,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">NATO ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, milho, palmito, tomate, catupiry, bacon, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId999993331" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="31" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">OURO BRANCO PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993345" onClick="maisMenos(99, 0,999993345,0,45,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993345">
+                                        <div id="numeroItens999993345" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993345" onClick="maisMenos(99,1,999993345,0,45,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">OURO BRANCO PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Bombom ouro branco e chocolate.</div>
+                                <input type="hidden" id="opcaoValueId999993345" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="45" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PALMITO TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993320" onClick="maisMenos(99, 0,999993320,0,20,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993320">
+                                        <div id="numeroItens999993320" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993320" onClick="maisMenos(99,1,999993320,0,20,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PALMITO TRADICIONAL</div>
+                                <div class="descricao">Massa, molho, mussarela, palmito, tomate, azeitona e orégano.</div>
+                                <input type="hidden" id="opcaoValueId999993320" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="20" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PIZZANATO TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993312" onClick="maisMenos(99, 0,999993312,0,12,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993312">
+                                        <div id="numeroItens999993312" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993312" onClick="maisMenos(99,1,999993312,0,12,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PIZZANATO TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, frango, milho, palmito, tomate, catupiry, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId999993312" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="12" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PORTUGUESA ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993329" onClick="maisMenos(99, 0,999993329,0,29,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993329">
+                                        <div id="numeroItens999993329" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993329" onClick="maisMenos(99,1,999993329,0,29,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PORTUGUESA ESPECIAL</div>
+                                <div class="descricao">massa, molho, mussarela, presunto, cebola, tomate, calabresa e orégano</div>
+                                <input type="hidden" id="opcaoValueId999993329" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="29" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PORTUGUESA TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId99999336" onClick="maisMenos(99, 0,99999336,0,6,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido99999336">
+                                        <div id="numeroItens99999336" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId99999336" onClick="maisMenos(99,1,99999336,0,6,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PORTUGUESA TRADICIONAL</div>
+                                <div class="descricao">massa, molho, mussarela, Presunto, ovos, cebola, azeitona e orégano</div>
+                                <input type="hidden" id="opcaoValueId99999336" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="6" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$22.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$29.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PRESTÍGIO PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993349" onClick="maisMenos(99, 0,999993349,0,49,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993349">
+                                        <div id="numeroItens999993349" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993349" onClick="maisMenos(99,1,999993349,0,49,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PRESTÍGIO PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Chocolate e prestígio de chocolate</div>
+                                <input type="hidden" id="opcaoValueId999993349" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="49" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">PRESTÍGIO PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993339" onClick="maisMenos(99, 0,999993339,0,39,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993339">
+                                        <div id="numeroItens999993339" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993339" onClick="maisMenos(99,1,999993339,0,39,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">PRESTÍGIO PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, Chocolate e coco ralado.</div>
+                                <input type="hidden" id="opcaoValueId999993339" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="39" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">ROMEU E JULIETA PIZZA DOCE TRADICIONAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993340" onClick="maisMenos(99, 0,999993340,0,40,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993340">
+                                        <div id="numeroItens999993340" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993340" onClick="maisMenos(99,1,999993340,0,40,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">ROMEU E JULIETA PIZZA DOCE TRADICIONAL</div>
+                                <div class="descricao">massa, Mussarela e goiabada.</div>
+                                <input type="hidden" id="opcaoValueId999993340" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="40" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">SERENATA PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993346" onClick="maisMenos(99, 0,999993346,0,46,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993346">
+                                        <div id="numeroItens999993346" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993346" onClick="maisMenos(99,1,999993346,0,46,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">SERENATA PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Bombom serenata e chocolate.</div>
+                                <input type="hidden" id="opcaoValueId999993346" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="46" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                        <li>
+                    <i class="display">SONHO DE VALSA PIZZA DOCE ESPECIAL</i>          
+                    <div class="salgada itemOpcaoQtd">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="boxQtds">     
+                                    <div class="btMenosOpcao" id="opcaoMenosId999993343" onClick="maisMenos(99, 0,999993343,0,43,9999933,99999,3)"></div> 
+                                    <div class="numeroItens" id="qtdPedido999993343">
+                                        <div id="numeroItens999993343" class="cleanQtdOptionHTML99999">0</div>
+                                    </div>
+                                    <div class="btMaisOpcao" id="opcaoMaisId999993343" onClick="maisMenos(99,1,999993343,0,43,9999933,99999,3)"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="titulo">SONHO DE VALSA PIZZA DOCE ESPECIAL</div>
+                                <div class="descricao">massa, Bombom sonho de valsa e chocolate.</div>
+                                <input type="hidden" id="opcaoValueId999993343" value="0" class="op9999933opcao cleanOpcaoQtd99999" data-opcao="43" />
+                                
+                                <input type="hidden" id="avisoBoxMax9999933" value="" />
+                                <input type="hidden" id="avisoBoxMin9999933" value="" />
+                            </td>
+                                                            <td>  
+                                                    <div class="valor valorBd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorBd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$28.99</div>
+                                            </div>               
+                                    <div class="valor valorGd1">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd2">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd3">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                    <div class="valor valorGd4">
+                                                                                <div class="valorOpcaoPizza">Inteira R$38.99</div>
+                                            </div>               
+                                                </td>
+                                                        </tr>
+                           </table>
+                     </div>
+                </li>
+                                </ul>
+            
+            <div class="buscasOpcaoAviso display" id="avisoBuscaPizzaSabores"> 
+                <h1 class="color">Sem resultados</h1>
+                <h2>Tente procurar pelo nome ou de acordo com a descrição da opção.<br>
+                Para visualizar novamente as opções apague o conteúdo da caixa de pesquisa.</h2>
+            </div>
+            </div>
+         </div>
+            <button type="button" class="botaoCancelarOpcional voltarPizzas">Voltar</button>
+            <button type="button" class="botaoConfirmarOpcional" onClick="validaTela(9999933, 99999)">Avançar</button>
+        </div>
+     <!-- FIM SABORES -->
+          <!-- BORDAS -->
+    <div class="itemOpcionais" style="width: 100%; float:left;">
+        <div class="cabecalhoSecundarioOpcionais">
+            <div class="tituloBox">
+                <span>4</span>
+                <font id="tituloBordas">Escolha a borda da pizza:</font>
+            </div>
+            <div class="buscarOpcao" id="opBuscaPizzaBordasBox">
+                <input type="text" value="" placeholder="Procurar borda" class="inputBuscarOpcao" id="opBuscaPizzaBordas" onFocus="procurarOpcao('PizzaBordas')"/>
+            </div>
+        </div>
+        <div class="boxOpcoes" id="opRollPizzaBordas"> 
+            <div class="grupoRollOpcoes" id="grupoRollPizzaBordas">
+                        <div class="boxInformacoes">A escolha da borda é opcional.</div>
+                                    <input type="hidden" id="OpcoesBoxQtd9999944" class="cleanBoxQtd99999" value="0"/>
+            <input type="hidden" id="OpcoesBoxMax9999944" value="1"/>
+            <input type="hidden" id="OpcoesBoxMin9999944" value="1"/>
+            <ul id="listaOpcoesPizzaBordas">
+          	
+                                <li>
+                    <i class="display">2 QUEIJOS ESPECIAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994425check" 
+                    class="op9999944check cleanCheck99999"  value="25"
+                     onclick="if(this.checked){maisMenos(1,1,999994425,0,25,9999944,99999,4)}else{maisMenos(1,0,999994425, 0,25,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994425check">
+                        <span class="spanUm">2 QUEIJOS ESPECIAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 12,00</div>               
+                        <div class="valor valorBd2">+ 12,00</div>               
+                        <div class="valor valorGd1">+ 12,00</div>               
+                        <div class="valor valorGd2">+ 12,00</div>               
+                        <div class="valor valorGd3">+ 12,00</div>               
+                        <div class="valor valorGd4">+ 12,00</div>               
+                                    </span>
+                        <span class="spanTres">Catupiry e cheddar</span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994425" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="25" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">CATUPIRY TRADICIONAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994423check" 
+                    class="op9999944check cleanCheck99999"  value="23"
+                     onclick="if(this.checked){maisMenos(1,1,999994423,0,23,9999944,99999,4)}else{maisMenos(1,0,999994423, 0,23,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994423check">
+                        <span class="spanUm">CATUPIRY TRADICIONAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 6,00</div>               
+                        <div class="valor valorBd2">+ 6,00</div>               
+                        <div class="valor valorGd1">+ 6,00</div>               
+                        <div class="valor valorGd2">+ 6,00</div>               
+                        <div class="valor valorGd3">+ 6,00</div>               
+                        <div class="valor valorGd4">+ 6,00</div>               
+                                    </span>
+                        <span class="spanTres"></span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994423" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="23" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">CHEDDAR TRADICIONAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994422check" 
+                    class="op9999944check cleanCheck99999"  value="22"
+                     onclick="if(this.checked){maisMenos(1,1,999994422,0,22,9999944,99999,4)}else{maisMenos(1,0,999994422, 0,22,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994422check">
+                        <span class="spanUm">CHEDDAR TRADICIONAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 6,00</div>               
+                        <div class="valor valorBd2">+ 6,00</div>               
+                        <div class="valor valorGd1">+ 6,00</div>               
+                        <div class="valor valorGd2">+ 6,00</div>               
+                        <div class="valor valorGd3">+ 6,00</div>               
+                        <div class="valor valorGd4">+ 6,00</div>               
+                                    </span>
+                        <span class="spanTres"></span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994422" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="22" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">CHOCOLATE COM MORANGO ESPECIAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994426check" 
+                    class="op9999944check cleanCheck99999"  value="26"
+                     onclick="if(this.checked){maisMenos(1,1,999994426,0,26,9999944,99999,4)}else{maisMenos(1,0,999994426, 0,26,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994426check">
+                        <span class="spanUm">CHOCOLATE COM MORANGO ESPECIAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 12,00</div>               
+                        <div class="valor valorBd2">+ 12,00</div>               
+                        <div class="valor valorGd1">+ 12,00</div>               
+                        <div class="valor valorGd2">+ 12,00</div>               
+                        <div class="valor valorGd3">+ 12,00</div>               
+                        <div class="valor valorGd4">+ 12,00</div>               
+                                    </span>
+                        <span class="spanTres"></span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994426" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="26" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">CHOCOLATE TRADICIONAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994421check" 
+                    class="op9999944check cleanCheck99999"  value="21"
+                     onclick="if(this.checked){maisMenos(1,1,999994421,0,21,9999944,99999,4)}else{maisMenos(1,0,999994421, 0,21,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994421check">
+                        <span class="spanUm">CHOCOLATE TRADICIONAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 6,00</div>               
+                        <div class="valor valorBd2">+ 6,00</div>               
+                        <div class="valor valorGd1">+ 6,00</div>               
+                        <div class="valor valorGd2">+ 6,00</div>               
+                        <div class="valor valorGd3">+ 6,00</div>               
+                        <div class="valor valorGd4">+ 6,00</div>               
+                                    </span>
+                        <span class="spanTres"></span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994421" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="21" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">MESCLADO ESPECIAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994428check" 
+                    class="op9999944check cleanCheck99999"  value="28"
+                     onclick="if(this.checked){maisMenos(1,1,999994428,0,28,9999944,99999,4)}else{maisMenos(1,0,999994428, 0,28,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994428check">
+                        <span class="spanUm">MESCLADO ESPECIAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 12,00</div>               
+                        <div class="valor valorBd2">+ 12,00</div>               
+                        <div class="valor valorGd1">+ 12,00</div>               
+                        <div class="valor valorGd2">+ 12,00</div>               
+                        <div class="valor valorGd3">+ 12,00</div>               
+                        <div class="valor valorGd4">+ 12,00</div>               
+                                    </span>
+                        <span class="spanTres">Chocolate branco e chocolate preto</span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994428" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="28" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">MUSSARELA ESPECIAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994424check" 
+                    class="op9999944check cleanCheck99999"  value="24"
+                     onclick="if(this.checked){maisMenos(1,1,999994424,0,24,9999944,99999,4)}else{maisMenos(1,0,999994424, 0,24,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994424check">
+                        <span class="spanUm">MUSSARELA ESPECIAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 12,00</div>               
+                        <div class="valor valorBd2">+ 12,00</div>               
+                        <div class="valor valorGd1">+ 12,00</div>               
+                        <div class="valor valorGd2">+ 12,00</div>               
+                        <div class="valor valorGd3">+ 12,00</div>               
+                        <div class="valor valorGd4">+ 12,00</div>               
+                                    </span>
+                        <span class="spanTres"></span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994424" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="24" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                        <li>
+                    <i class="display">ROMEU E JULIETA ESPECIAL</i>
+                    
+                    
+                    <div class="salgada itemOpcao">
+                 
+                    <input type="checkbox" id="opcaoValueId999994427check" 
+                    class="op9999944check cleanCheck99999"  value="27"
+                     onclick="if(this.checked){maisMenos(1,1,999994427,0,27,9999944,99999,4)}else{maisMenos(1,0,999994427, 0,27,9999944,99999,4)}"/>
+                     
+                    <label for="opcaoValueId999994427check">
+                        <span class="spanUm">ROMEU E JULIETA ESPECIAL</span>
+                        <span class="spanDois">
+                                    <div class="valor valorBd1">+ 12,00</div>               
+                        <div class="valor valorBd2">+ 12,00</div>               
+                        <div class="valor valorGd1">+ 12,00</div>               
+                        <div class="valor valorGd2">+ 12,00</div>               
+                        <div class="valor valorGd3">+ 12,00</div>               
+                        <div class="valor valorGd4">+ 12,00</div>               
+                                    </span>
+                        <span class="spanTres">Mussarela e goiabada</span>
+                    </label>
+                    <input type="hidden" id="opcaoValueId999994427" value="0" class="op9999944opcao cleanOpcaoQtd99999" data-opcao="27" />
+                    <input type="hidden" id="avisoBoxMax9999944" value="Você só pode escolher uma massa" />
+                    <input type="hidden" id="avisoBoxMin9999944" value="Você não escolheu nenhuma massa" />
+                </div>     
+                    
+                </li>
+                                </ul>
+          
+            <div class="buscasOpcaoAviso display" id="avisoVazioBorda">
+                <h1 class="color">Sem bordas recheadas.</h1>
+                <h2>Esse tamanho de pizza não possui opções de bordas recheadas.<br><br>Avance na montagem.</h2>
+            </div>
+            <div class="buscasOpcaoAviso display" id="avisoBuscaPizzaBordas"> 
+                <h1 class="color">Sem resultados</h1>
+                <h2>Tente procurar pelo nome ou de acordo com a descrição da opção.<br>
+                Para visualizar novamente as opções apague o conteúdo da caixa de pesquisa.</h2>
+            </div>
+            
+            </div>
+         </div>
+                 
+            <button type="button" class="botaoCancelarOpcional voltarPizzas">Voltar</button>
+            <button type="button" class="botaoConfirmarOpcional" id="validaBorda" onClick="validaTela(9999944, 99999)">Avançar</button>
+            <button type="button" class="botaoConfirmarOpcional display" id="avancarBorda" onClick="avancarTela()">Avançar</button>
+                
+        </div>
+        <!-- FIM BORDAS -->
+    
+        
+        <!-- COMENTÁRIO DA PIZZA -->
+        <div class="itemOpcionais">
+             <div class="cabecalhoSecundarioOpcionais">
+                <div class="tituloBox">Faça um comentário:  </div>
+             </div>
+             
+             <div class="boxOpcoes">
+                                <div class="boxInformacoes">Caso não queira algum ingrediente informe o nome dele aqui.</div>
+                                <textarea id="comentario99999" placeholder="Escreva aqui..." style="height:280px!important;"></textarea>
+             </div>
+         
+            <button type="button" class="botaoCancelarOpcional voltarPizzas">Voltar</button>
+            <button type="submit" class="botaoConfirmarOpcional" id="submeterProdutoPizzas99999" onclick="submitProduto(0,99999)">Pronto! Adicionar ao pedido</button>
+        </div>
+        </div><!-- Corpo roll pizzas -->
+    </div>  
+            <input type="hidden" id="op1OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op2OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op3OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op4OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op5OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op6OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op7OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op8OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op9OpcoesBoxArray99999" value="0"/>
+            <input type="hidden" id="op10OpcoesBoxArray99999" value="0"/>
+
+
+
+<div id="freeow" class="freeow freeow-top-right"></div>
+<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://onpedido.com.br/static/plugins/owlCarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="http://onpedido.com.br/static/js/fancybox.js"></script> 
+<script type="text/javascript" charset="utf-8" src="http://onpedido.com.br/static/plugins/niceScroll/niceScroll.js"></script>
+<script type="text/javascript"  src="http://onpedido.com.br/static/plugins/notify/jquery.freeow.min.js"></script>  
+<script>
+var atributo = {
+    contadorBordas        : 8,
+    contadorExtrasB       : 0,
+    OpcoesBoxMax9999944B  : 1,
+    OpcoesBoxMin9999944B  : 0,
+    tituloBordasB         : 'Escolha até 1 borda: (Opcional)',
+    avisoBoxMax9999944B   : 'Você já escolheu 1 para sua pizza. Desmarque uma borda para marcar outra.',
+    avisoBoxMin9999944B   : '',
+
+    contadorExtrasP       : 0,
+    OpcoesBoxMax9999944P  : 1,
+    OpcoesBoxMin9999944P  : 0,
+    tituloBordasP         : 'Escolha até 1 borda: (Opcional)',
+    avisoBoxMax9999944P   : 'Você já escolheu 1 para sua pizza. Desmarque uma borda para marcar outra.',
+    avisoBoxMin9999944P   : '',
+
+    contadorExtrasM       : 0,
+    OpcoesBoxMax9999944M  : 1,
+    OpcoesBoxMin9999944M  : 0,
+    tituloBordasM         : 'Escolha até 1 borda: (Opcional)',
+    avisoBoxMax9999944M   : 'Você já escolheu 1 para sua pizza. Desmarque uma borda para marcar outra.',
+    avisoBoxMin9999944M   : '',
+
+    contadorExtrasG       : 0,
+    OpcoesBoxMax9999944G  : 1,
+    OpcoesBoxMin9999944G  : 0,
+    tituloBordasG         : 'Escolha até 1 borda: (Opcional)',
+    avisoBoxMax9999944G   : 'Você já escolheu 1 para sua pizza. Desmarque uma borda para marcar outra.',
+    avisoBoxMin9999944G   : '',
+
+    contadorExtrasGG      : 0,
+    OpcoesBoxMax9999944GG : 1,
+    OpcoesBoxMin9999944GG : 0,
+    tituloBordasGG        : 'Escolha até 1 borda: (Opcional)',
+    avisoBoxMax9999944GG  : 'Você já escolheu 1 para sua pizza. Desmarque uma borda para marcar outra.',
+    avisoBoxMin9999944GG  : ''
+}
+function avancarPizzas(){
+    $("#corpoRollOpcionais99999").trigger("owl.next");
+    verificaTamanho();
+}
+function avancarPizzaMix(){
+    var pizzaMix = $("#pizzaMix").val(); 
+    if(pizzaMix === '0'){
+        $("#freeow").freeow("Opss", 'Escolha uma opção de sabor', {
+            classes: ["erro"]
+        });
+    }else{
+        var pizzaMix = $("#pizzaMix").val();
+        if(pizzaMix !== "0"){
+            if(pizzaMix === "doce"){
+                $(".salgada").hide();
+                $(".doce").show();
+            }else{
+                $(".doce").hide();
+                $(".salgada").show();
+            }   
+        }
+        $("input[name='tamanho']").attr("checked", false);
+        $("#op1OpcoesBoxArray99999").val("");
+        $("#corpoRollOpcionais99999").trigger("owl.next");
+    }
+    verificaTamanho();
+    
+}
+function avancarTela(){
+    $("#corpoRollOpcionais99999").trigger("owl.next");
+}
+function verTamanho(campo){
+    function tamanhoHide(tamanhoHide){
+        var pizzaMix = $("#pizzaMix").val();
+        if(pizzaMix !== "0"){
+            if(pizzaMix === "doce"){
+                $(".salgada").hide();
+                $(".doce").show();
+            }else{
+                $(".doce").hide();
+                $(".salgada").show();
+            }
+        }
+        $(tamanhoHide).hide(); 
+    }
+
+    $("#avisoVazioBorda").hide();
+    $("#avisoVazioExtra").hide();
+    $("#opBuscaPizzaExtrasBox").show();
+    $("#opBuscaPizzaBordasBox").show();
+    $("#avancarBorda").hide();
+    $("#validaBorda").show();
+    
+    $(".valor").hide();
+    $(".valor"+campo).show();
+    $("#op1OpcoesBoxArray99999").val(campo);
+    $(".numeroItens").css("background-color","#555555");
+    
+    var tamanho = campo.split('d');
+
+    $("#OpcoesBoxMax9999933").val(tamanho[1]);
+    $("#OpcoesBoxMin9999933").val(tamanho[1]);
+
+    $(".bhide").show(); 
+    $(".phide").show(); 
+    $(".mhide").show();
+    $(".ghide").show();
+    $(".gghide").show();
+
+    switch(tamanho[0]) {
+        case "B": 
+            tamanhoHide(".bhide");
+            $("#OpcoesBoxMax9999944").val(atributo['OpcoesBoxMax9999944B']); 
+            $("#OpcoesBoxMin9999944").val(atributo['OpcoesBoxMin9999944B']); 
+            $("#tituloBordas").html(atributo['tituloBordasB']);
+            $("#avisoBoxMax9999944").val(atributo['avisoBoxMax9999944B']);
+            $("#avisoBoxMin9999944").val(atributo['avisoBoxMin9999944B']);
+            
+            var total = $("ul#listaOpcoesPizzaBordas .bhide").size();
+            if(atributo['contadorExtrasB'] === 0){
+                $("#avisoVazioExtra").show();
+                $("#opBuscaPizzaExtrasBox").hide();
+            }
+            if(total === atributo['contadorBordas']){
+                $("#avisoVazioBorda").show();
+                $("#avancarBorda").show();
+                $("#validaBorda").hide();
+                $("#opBuscaPizzaBordasBox").hide();  
+            }
+        break;
+        case "P": 
+            tamanhoHide(".phide");
+            $("#OpcoesBoxMax9999944").val(atributo['OpcoesBoxMax9999944P']);
+            $("#OpcoesBoxMin9999944").val(atributo['OpcoesBoxMin9999944P']);
+            $("#tituloBordas").html(atributo['tituloBordasP']); 
+            $("#avisoBoxMax9999944").val(atributo['avisoBoxMax9999944P']);
+            $("#avisoBoxMin9999944").val(atributo['avisoBoxMin9999944P']);
+            
+            var total = $("ul#listaOpcoesPizzaBordas .phide").size();
+            if(atributo['contadorExtrasP'] === 0){
+                $("#avisoVazioExtra").show();
+                $("#opBuscaPizzaExtrasBox").hide();
+            }
+            if(total === atributo['contadorBordas']){
+                $("#avisoVazioBorda").show();
+                $("#avancarBorda").show();
+                $("#validaBorda").hide();
+                $("#opBuscaPizzaBordasBox").hide();  
+            }
+        break;
+        case "M": 
+            tamanhoHide(".mhide");
+            $("#OpcoesBoxMax9999944").val(atributo['OpcoesBoxMax9999944M']); 
+            $("#OpcoesBoxMin9999944").val(atributo['OpcoesBoxMin9999944M']); 
+            $("#tituloBordas").html(atributo['tituloBordasM']);
+            $("#avisoBoxMax9999944").val(atributo['avisoBoxMax9999944M']);
+            $("#avisoBoxMin9999944").val(atributo['avisoBoxMin9999944M']);
+            
+            var total = $("ul#listaOpcoesPizzaBordas .mhide").size();
+            if(atributo['contadorExtrasM'] === 0){
+                $("#avisoVazioExtra").show();
+                $("#opBuscaPizzaExtrasBox").hide();
+            }
+            if(total === atributo['contadorBordas']){
+                $("#avisoVazioBorda").show();
+                $("#avancarBorda").show();
+                $("#validaBorda").hide();
+                $("#opBuscaPizzaBordasBox").hide();  
+            }
+        break;
+        case "G": 
+            tamanhoHide(".ghide");
+            $("#OpcoesBoxMax9999944").val(atributo['OpcoesBoxMax9999944G']); 
+            $("#OpcoesBoxMin9999944").val(atributo['OpcoesBoxMin9999944G']);
+            $("#tituloBordas").html(atributo['tituloBordasG']);
+            $("#avisoBoxMax9999944").val(atributo['avisoBoxMax9999944G']);
+            $("#avisoBoxMin9999944").val(atributo['avisoBoxMin9999944G']);
+            
+            var total = $("ul#listaOpcoesPizzaBordas .ghide").size();
+            if(atributo['contadorExtrasG'] === 0){
+                $("#avisoVazioExtra").show();
+                $("#opBuscaPizzaExtrasBox").hide();
+            }
+            if(total === atributo['contadorBordas']){
+                $("#avisoVazioBorda").show();
+                $("#avancarBorda").show();
+                $("#validaBorda").hide();
+                $("#opBuscaPizzaBordasBox").hide();  
+            }
+        break;
+        case "GG":
+            tamanhoHide(".gghide");
+            $("#OpcoesBoxMax9999944").val(atributo['OpcoesBoxMax9999944GG']);
+            $("#OpcoesBoxMin9999944").val(atributo['OpcoesBoxMin9999944GG']);
+            $("#tituloBordas").html(atributo['tituloBordasGG']);
+
+            $("#avisoBoxMax9999944").val(atributo['avisoBoxMax9999944GG']);
+            $("#avisoBoxMin9999944").val(atributo['avisoBoxMin9999944GG']);
+            
+            var total = $("ul#listaOpcoesPizzaBordas .gghide").size();
+            if(atributo['contadorExtrasGG'] === 0){
+                $("#avisoVazioExtra").show();
+                $("#opBuscaPizzaExtrasBox").hide();
+            }
+            if(total === atributo['contadorBordas']){
+                $("#avisoVazioBorda").show();
+                $("#avancarBorda").show();
+                $("#validaBorda").hide();
+                $("#opBuscaPizzaBordasBox").hide();
+            }
+        break;
+        default: console.log('Switch tamanho não retornou dados.');
+    }   
+
+    if(tamanho[1] === '1'){tamanho[1] = ' 1 sabor';}else{tamanho[1] = tamanho[1] + ' sabores';}
+    $("#tituloSabores").html('Escolha '+ tamanho[1] +' da sua preferência:');
+  
+    $("#avisoBoxMax9999933").val('Nessa montagem você deve escolher '+ tamanho[1] +', diminua a quantidade de um sabor para poder pedir outro.');
+    $("#avisoBoxMin9999933").val('Você não escolheu '+ tamanho[1] +' para sua pizza, peça mais sabores.');     
+     
+    $(".cleanBoxQtd99999").val("0");
+    $(".cleanOpcaoQtd99999").val("0");
+    $(".cleanQtdOptionHTML99999").html("0");
+    $(".cleanCheck99999").attr('checked', false);
+
+    var bordas = $('#listaOpcoesPizzaBordas').children(':visible').length - $('#listaOpcoesPizzaBordas .categoriaOpcoes').children(':visible').length;
+        
+    if(bordas == 0){
+        $('#avisoVazioBorda').show();
+    }else{
+        $('#avisoVazioBorda').hide();
+    }
+
+    //Extras
+    var extras = $('#listaOpcoesPizzaExtras').children(':visible').length - $('#listaOpcoesPizzaExtras .categoriaOpcoes').children(':visible').length;
+       
+    if(extras == 0){
+        $('#avisoVazioExtra').show();
+    }else{
+        $('#avisoVazioExtra').hide();
+    }
+}
+function validaTamanho(){
+    var tamanho = $("#op1OpcoesBoxArray99999").val();
+    if(tamanho.length > 2){
+        $("#corpoRollOpcionais99999").trigger("owl.next");
+    }else{
+        console.log("Tamanho não escolhido");
+        $("#freeow").freeow("Opss", 'Escolha uma opção de montagem', {
+            classes: ["erro"]
+        });
+    }
+}
+
+function maisMenos(qtdMax, acao, opId, tipo, idOpcional, campo, idProduto, campoOp) {
+    
+    console.log("Mais ou Menos chamado");
+    
+    var totalObtidoBox = parseInt($("#OpcoesBoxQtd" + campo).val());
+    var totalMaximoBox = parseInt($("#OpcoesBoxMax" + campo).val());
+    
+    qtdMax = parseInt(qtdMax);
+    acao = parseInt(acao);
+    opId = parseInt(opId);
+    tipo = parseInt(tipo);
+    idOpcional = parseInt(idOpcional);
+    campo = parseInt(campo);
+    idProduto = parseInt(idProduto);
+    
+    if (totalObtidoBox >= totalMaximoBox && acao === 1) {
+        console.log("Maximo de opções alcançadas para box");
+        
+        $("#freeow").freeow("Opss", $("#avisoBoxMax" + campo).val(), {
+            classes: ["erro"]
+        });
+        console.log("Maximo de opções alcançadas para esse box")
+        if (tipo === 0) {
+            $("#opcaoValueId" + opId + "check").attr('checked', false);
+        }
+    } else {
+        var qtdOpcao = parseInt($('#opcaoValueId' + opId).val());
+        if (acao === 1) {
+            if (qtdOpcao < qtdMax) {
+                $('#opcaoValueId' + opId).val(qtdOpcao + 1);
+                $("#OpcoesBoxQtd" + campo).val(totalObtidoBox + 1);
+                $("#numeroItens" + opId).html(qtdOpcao + 1);
+            } else {  
+                $("#freeow").freeow("Opss", $("#avisoOpMax" + opId).val(), {
+                    classes: ["erro"]
+                });
+                console.log("Maximo de opções alcançadas");
+                if (tipo === 0) {
+                    $("#" + opId + "check").attr('checked', false);
+                }
+            }
+        } else if (acao === 0) {
+            if (qtdOpcao > 0) {
+                $("#opcaoValueId" + opId).val(qtdOpcao - 1);
+                $("#OpcoesBoxQtd" + campo).val(totalObtidoBox - 1);
+                $("#numeroItens" + opId).html(qtdOpcao - 1);
+            }
+        }
+    }
+    var opcoes = $("input.op" + campo + "opcao").map(function() {
+        if (this.value > 0) {
+            return this.value + "x" + $("#" + this.id).data("opcao");
+        }
+    }).get().join();
+    $("#op" + campoOp + "OpcoesBoxArray" + idProduto).val(opcoes);
+
+    if($("#opcaoValueId" + opId).val() > 0){
+        $("#qtdPedido" + opId).css("background-color","#34A203");
+    }else{
+        $("#qtdPedido" + opId).css("background-color","#555555");
+    }
+}
+function verificaTamanho(){
+    console.log("Verificando pizza disponiveis.");
+
+    function tamanhoHideDisp(tamanhoHide){
+        var pizzaMix = $("#pizzaMix").val();
+        if(pizzaMix !== "0"){
+            if(pizzaMix === "doce"){
+                $(".salgada").hide();
+                $(".doce").show();
+            }else{
+                $(".doce").hide();
+                $(".salgada").show();
+            }
+        }
+        $(tamanhoHide).hide(); 
+    }
+
+    document.querySelectorAll('.tamanhoMap').forEach(function (element) {
+        var campo = $(element).val();
+        var tamanho = campo.split('d');
+
+        $(".bhide").show(); 
+        $(".phide").show(); 
+        $(".mhide").show();
+        $(".ghide").show();
+        $(".gghide").show();
+
+        switch(tamanho[0]) {
+            case "B": 
+                tamanhoHideDisp(".bhide");  
+            break;
+            case "P": 
+                tamanhoHideDisp(".phide");
+            break;
+            case "M": 
+                tamanhoHideDisp(".mhide");
+            break;
+            case "G": 
+                tamanhoHideDisp(".ghide");
+            break;
+            case "GG":
+                tamanhoHideDisp(".gghide");
+            break;
+            default: console.log('Switch tamanho não retornou dados.');
+        }   
+
+        //Ocultar caso massas ou sabores não existam para determinado tamanho.
+        $(".bodyTamanho"+campo).show();
+        $(".headerTamanho"+ tamanho[0]).show();
+                    //Sabores
+            var sabores = $('ul#listaOpcoesPizzaSabores li').children(':visible').length - $('ul#listaOpcoesPizzaSabores li div.categoriaOpcoes').children(':visible').length;
+       
+            if(sabores == 0){
+                $(".bodyTamanho"+campo).hide();
+                $('.headerTamanho'+ tamanho[0]).hide();
+            }
+            //console.log("Qtd massas e sabores no campo "+ campo +": " + sabores + 'sabores');
+        
+    });
+}
+
+function validaTela(campo, idProduto) {
+    var totalObtidoBox = parseInt($("#OpcoesBoxQtd" + campo).val());
+    var totalMaxBox = parseInt($("#OpcoesBoxMax" + campo).val());
+    var totalMinBox = parseInt($("#OpcoesBoxMin" + campo).val());
+    if (totalObtidoBox >= totalMinBox && totalObtidoBox <= totalMaxBox) {
+        $("#corpoRollOpcionais" + idProduto).trigger("owl.next");
+    } else {
+        console.log("Minimo de opções não escolhidas.");
+        $("#freeow").freeow("Opss", $("#avisoBoxMin" + campo).val(), {
+            classes: ["erro"]
+        });
+    }
+}
+
+var boxRollProduto =  {cursorcolor: "#555",cursorwidth: "10px", cursorborder: "0px solid #555",background: "#ccc", cursoropacitymin: 5, railpadding: { top: 0, right: 0,left: 0, bottom: 0 }};
+var owlProduto = { items: 1,itemsDesktop: [960, 1], itemsDesktopSmall: [960, 1],itemsTablet: [600, 1], itemsMobile: !1, touchDrag: false,mouseDrag: false  };
+
+var owlPizza = $("#corpoRollOpcionais99999");
+owlPizza.owlCarousel(owlProduto);
+                
+$(".voltarPizzas").click(function() { 
+    owlPizza.trigger("owl.prev"); 
+});
+
+$(document).ready(function() {
+    var niceTamanhosPizzas = $("#opRollPizzaTamanhos").niceScroll("#grupoRollPizzaTamanho", boxRollProduto);
+    var niceSaboresPizzas  = $("#opRollPizzaSabores").niceScroll("#grupoRollPizzaSabores", boxRollProduto);
+    var niceBordasPizzas   = $("#opRollPizzaBordas").niceScroll("#grupoRollPizzaBordas", boxRollProduto);
+    var niceMassasPizzas   = $("#opRollPizzaMassas").niceScroll("#grupoRollPizzaMassas", boxRollProduto);
+    var niceExtrasPizzas   = $("#opRollPizzaExtras").niceScroll("#grupoRollPizzaExtras", boxRollProduto);
+}); 
+   
+function procurarOpcao(input) {
+     console.log('Busca iniciada');
+	$("#opBusca" + input).keyup(function() {
+		$("#opRoll" + input).scrollTop(0);
+		var filter = $(this).val(),
+			count = 0;
+		$("#listaOpcoes" + input + " li").each(function() {
+			if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+				$(this).hide();
+				$(this).parent("li").hide();
+			} else {
+				$(this).show();
+				$(this).parent("li").show();
+				count++;
+			}
+		});
+		if (count === 0) {
+			$("#avisoBusca" + input).show();
+		} else {
+			$("#avisoBusca" + input).hide();
+		}
+	});
+}
+
+function submitProduto(tentar, idProduto) {
+    if (tentar === 0) {
+        $('#submeterProdutoPizzas' + idProduto).attr("disabled", true);
+        $("#processandoPizzas").fadeIn(500);
+        $("#fullTitulo").fadeOut(0);
+        $.ajax({
+            type: "POST",
+            timeout: 10000,
+            cache: false,
+            data: {
+                idProduto: idProduto,
+                comentario: $("#comentario" + idProduto).val(),
+                op1: $("#op1OpcoesBoxArray" + idProduto).val(),
+                op2: $("#op2OpcoesBoxArray" + idProduto).val(),
+                op3: $("#op3OpcoesBoxArray" + idProduto).val(),
+                op4: $("#op4OpcoesBoxArray" + idProduto).val(),
+                op5: $("#op5OpcoesBoxArray" + idProduto).val(),
+                op6: $("#op6OpcoesBoxArray" + idProduto).val(),
+                op7: $("#op7OpcoesBoxArray" + idProduto).val(),
+                op8: $("#op8OpcoesBoxArray" + idProduto).val(),
+                op9: $("#op9OpcoesBoxArray" + idProduto).val(),
+                op10: $("#op10OpcoesBoxArray" + idProduto).val()
+            },
+            url: "../carrinhoAdd.php",
+            success: function() {
+                console.log("Produto adicionado com sucesso");
+                parent.jQuery.fancybox.close();
+                return;
+            },
+            error: function() {
+                console.log("Produto não adicionado impossivel conectar ao servidor");
+                $('#submeterProdutoPizzas' + idProduto).attr("disabled", false);
+                $("#freeow").freeow("Atenção", "Produto não adicionado, queda de internet!", {
+                    classes: ["erro"]
+                });
+                $("#processandoPizzas").fadeOut(500);
+                $("#fullTitulo").fadeIn(500).delay(500);
+                $("#compactoTitulo").fadeOut(0).delay(1);
+            }
+        });
+    } else {
+        $('#submeterProdutoPizzas' + idProduto).attr("disabled", true);
+        $.ajax({
+            type: "POST",
+            timeout: 10000,
+            cache: false,
+            data: {
+                idProduto: idProduto,
+                comentario: $("#comentario" + idProduto).val(),
+                op1: $("#op1OpcoesBoxArray" + idProduto).val(),
+                op2: $("#op2OpcoesBoxArray" + idProduto).val(),
+                op3: $("#op3OpcoesBoxArray" + idProduto).val(),
+                op4: $("#op4OpcoesBoxArray" + idProduto).val(),
+                op5: $("#op5OpcoesBoxArray" + idProduto).val(),
+                op6: $("#op6OpcoesBoxArray" + idProduto).val(),
+                op7: $("#op7OpcoesBoxArray" + idProduto).val(),
+                op8: $("#op8OpcoesBoxArray" + idProduto).val(),
+                op9: $("#op9OpcoesBoxArray" + idProduto).val(),
+                op10: $("#op10OpcoesBoxArray" + idProduto).val()
+            },
+            url: "../carrinhoAdd.php",
+            beforeSend: function() {
+               $('#submeterProdutoPizzas' + idProduto).attr("disabled", true);
+               $("#processandoPizzas").fadeIn(500);
+               $("#fullTitulo").fadeOut(0);
+               $("#compactoTitulo").fadeIn(0).delay(1);
+            },
+            success: function() {
+                console.log("Produto adicionado com sucesso");
+                parent.jQuery.fancybox.close();
+                return;
+            },
+            error: function() {
+                console.log("Produto não adicionado impossivel conectar ao servidor");
+                $('#submeterProdutoPizzas' + idProduto).attr("disabled", false);
+                $("#freeow").freeow("Atenção", "Produto não adicionado, queda de internet!", {
+                    classes: ["erro"]
+                });
+                $("#processandoPizzas").fadeOut(500);
+                $("#fullTitulo").fadeIn(500).delay(500);
+                $("#compactoTitulo").fadeOut(0).delay(1);
+            }
+        });
+    }
+}  
+</script> 
+</body>
+
+<!-- Mirrored from pizzanato.onpedido.com.br/pizzas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jan 2023 15:23:53 GMT -->
+</html>

@@ -1,0 +1,112 @@
+
+/***********************/
+/*** Tema do sistema ***/
+/***********************/
+.produto h1,
+.color,
+.tituloCarrinho, 
+.color a:link, 
+.color a:visited, 
+.color a:active,
+spam.crumbAtivo,
+#crumbs ul li a:hover spam,
+h2.tituloItensPedido,
+h3.tituloProdutoPedido spam,
+.observacoesProdutoPedido h4,
+.is-active,
+.itemFooter h1,
+.itemFooter ul a:hover,
+.textoCadastro, 
+.textoCadastroSucesso,
+.carrinhoVazio,
+.carrinhoCarregando,
+.boxPagina h1,
+.boxPagina font,
+.botaoCadastroBrancoUm,
+.botaoCadastroBrancoDois,
+.ouBotaoCadastro,
+.tituloColunaFP,
+.textoSucessoFP h1,
+.produtoMini h1,
+.itemOpcao label span:nth-child(1),
+.itemOpcaoQtd span:nth-child(1),
+.itemOpcaoQtd .titulo,
+.semCartao h1
+{
+	color: #E59329!important;
+}
+::selection {background: #E59329;!important; color: #fff;}
+.borderColor {border-color: #E59329;!important}
+::-moz-selection {background: #E59329;!important; color: #fff;}
+
+.pace 
+.pace-activity,
+#crumbs ul li a:hover,
+a.crumbAtivo,
+.backgroundColor, 
+.botaoPedir spam:first-child,
+.categoriaProduto,
+.iconePedido,
+h2.tituloItensPedido spam:last-child,
+h3.tituloProdutoPedido,
+.btSomar, .btSubtrair,
+.acaoPedidoOptions input[type="radio"]:checked + label,
+.iconeCardapio,
+.cabecalhoPrimarioOpcionais, 
+.valorBox, .boxSelecione:hover .boxSelecioneTitulo,
+.comentarioProduto:hover .boxSelecioneTitulo, .btn:hover,
+.avisoAlerta, .botaoConfirmarCadastro, .avisoAlertaCompacto, .emblemaEmail,
+.iconeCarrinhoVazio, 
+.iconeCarrinhoCarregando,
+.iconeCarrinhoAguardando,
+.iconeOk, .botaoPagina,
+.boxPagina h1 font.passoAtivo,
+.chosen-container .chosen-results li.highlighted,
+.iconeErro,
+.avisoAlertaMenor,
+.iconeAtendimento,
+.btFPmap,
+.troco,
+.sifraoFP,
+#exibirEstrelas,
+.tituloBox span,
+.btMenosOpcao,
+.btMaisOpcao,
+.btProximoSlide,
+.btAnteriorSlide,
+.boxPizza table tr:first-child td,
+.avisoAlertaPopUp .avisoTitulo,
+#loader
+{
+	background-color: #E59329!important;
+}
+#boxListaTitulo{
+	background-color: #E59329!important;
+	background-image: url(../onpedido.com.br/static/img/preto30.png);
+    background-repeat: repeat;
+}
+.pedirOnline:after,
+.pedirOnline:hover,
+.pedirOnline,
+#crumbs ul li a:hover:after,
+#crumbs ul li .crumbAtivo:after
+{
+	border-left-color: #E59329!important;
+}
+.carrinho, 
+.boxRodapeCarrinho spam:last-child,
+h2.tituloItensPedido,
+.selectem_label,
+footer,
+.inputCadastro:focus,
+#valores,
+.inputBoxPagina:focus,
+.containerFP input:focus,
+.avaliarPedidoTexto:focus,
+.boxInformativo h1
+{
+	border-color: #E59329!important;
+}
+.freeowLogo {
+    background-image: url(uploads/6518-13.01.2023-18.54hs-804921.png);
+}
